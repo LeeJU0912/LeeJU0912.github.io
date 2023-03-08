@@ -8,7 +8,8 @@
 <body>
 <div id="container">
     <p>
-        <img src="./src/rabbit.jpg" style="max-width: 20%; height: auto" alt="Rabbit">
+        <img src="./src/rabbit.jpg" style="max-width: 20%; height: auto;" alt="Rabbit">
+        <br>
         <strong>
             <span style="font-size: 30px; color: darkorange;">
                 반갑네🐰 내 이름은 <b style="color: saddlebrown"><u><a href="https://github.com/LeeJU0912" target="_blank" title="My GitHub">LeeJU</a></u></b> 라네.
@@ -24,35 +25,117 @@
         </a>
     </p>
 
+    <audio controls>
+        <source src="Tobu%20-%20Back%20To%20You%20%5BNCS%20Release%5D.mp3">
+    </audio>
+    <br>
+    <a href="https://youtu.be/rrzHAoA-oRI" target="_blank">Tobu - Back To You [NCS Release]</a>
+
     <ol type="1" style="font-size: 40px; font-style: oblique"> How to Greeting
         <li>Hello!</li>
         <li>こんにちは！</li>
         <li>你好！</li>
         <li>안녕하세요!</li>
     </ol>
+
+    <p>
+        <label><input type="date"></label>
+        <label><input type="datetime-local"></label>
+    </p>
+
+    <form action="" autocomplete="off">
+        <fieldset>
+            <legend>상품 선택</legend>
+            <label for="user-id">아이디(6자 이상)</label>
+            <input type="text" id="user-id" placeholder="여기에 입력하시게." autofocus required>
+
+            <label for="pwd">패스워드</label>
+            <input type="password" id="pwd">
+
+            <input type="submit" value="로그인">
+        </fieldset>
+        <fieldset>
+            <legend>배송 정보</legend>
+            <label><input type="radio" value="yes" name="gift">yes</label>
+            <label><input type="radio" value="no" name="gift">no</label>
+            <label><input type="checkbox">1</label>
+            <label><input type="checkbox">2</label>
+            <label><input type="checkbox">3</label>
+        </fieldset>
+        <div id="buttons">
+            <input type="submit" value="가입하기">
+            <input type="reset" value="지우기">
+        </div>
+        <div id="another">
+            <button type="submit">가입하기</button>
+            <button type="reset">지우기</button>
+        </div>
+    </form>
+
+    <ul>
+        <li>
+            <label><input type="checkbox" value="s_3">선물용 3kg</label>
+            <label>
+                <input type="number" min="0" max="5">
+                개 (최대 5개)
+            </label>
+        </li>
+        <li>
+            <label><input type="checkbox" value="s_5">선물용 5kg</label>
+            <label>
+                <input type="range" min="0" max="3" value="1">
+                개
+            </label>
+        </li>
+    </ul>
     <p>
         10000원<small>(부과세 포함)</small>
         H<sub>2</sub>O
         E = mc<sup>2</sup>
     </p>
+    <label for="rabbit"></label><select id="rabbit">
+        <option value="rab1" selected>드워프 토끼</option>
+        <option value="rab2">롭이어 토끼</option>
+    </select>
     <table>
+        <caption>홍익대</caption>
+        <colgroup>
+            <col style="background-color: yellow">
+            <col span="2" style="width: 200px">
+        </colgroup>
+        <thead>
         <tr>
-            <th>
-                토끼
-            </th>
-            <th>
-                냥이
-            </th>
+            <th>단과대</th>
+            <th>성비</th>
+            <th>위치</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+            <td>공대</td>
+            <td>남초</td>
+            <td rowspan="2">서울</td>
         </tr>
         <tr>
-            <td>
-                드워프토끼
-            </td>
-            <td>
-                치즈냥이
-            </td>
+            <td>경영대</td>
+            <td>반반?</td>
+        </tr>
+        <tr>
+            <td>조형대</td>
+            <td>여초</td>
+            <td rowspan="2">세종</td>
+        </tr>
+        <tr>
+            <td>과기대</td>
+            <td>남초</td>
+        </tr>
+        </tbody>
+        <tr>
         </tr>
     </table>
+    <label for="memo">메모</label>
+    <textarea id="memo" cols="40" rows="4"></textarea>
 </div>
 </body>
 </html>
