@@ -1,0 +1,44 @@
+.test1 {
+    border: 1px solid #000;
+}
+.greet {
+    font-size: 40px;
+    text-shadow: 1px -3px 10px darkmagenta;
+}
+.hi {
+    font-size: 30px;
+    color: orange;
+}
+.box {
+    box-sizing: border-box;
+    width: 400px;
+    height: 200px;
+    border-style: dashed;
+    border-width: thick thin thick thin;
+    border-color: aqua;
+    box-shadow: 1px -2px 10px 4px darkblue;
+}
+
+.rabbit {
+    max-width: 20%;
+    height: auto;
+    border-radius: 20px;
+}
+
+input[required] {
+    border-color: red;
+}
+
+input:checked + label {
+    color: green;
+}
+
+.new::after {
+    content: "NEW!!";
+    font-size: small;
+    padding: 4px 8px;
+    margin: 0 10px;
+    border-radius: 4px;
+    background: #f00;
+    color: #fff;
+}

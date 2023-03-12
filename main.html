@@ -2,16 +2,25 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/main.css" type="text/css">
     <title>LeeJU 스케치북</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
+
+        .wfont {
+            font-family: 'Gamja Flower', cursive;
+        }
+    </style>
 </head>
-<body>
+<body class="wfont">
 <div id="container">
+    <p class="test1">class selector test</p>
+    <p class="test1">class selector test2</p>
     <p>
-        <img src="./src/rabbit.jpg" style="max-width: 20%; height: auto;" alt="Rabbit">
+        <img src="./src/rabbit.jpg" alt="Rabbit" class="rabbit">
         <br>
         <strong>
-            <span style="font-size: 30px; color: darkorange;">
+            <span class="hi">
                 반갑네🐰 내 이름은 <b style="color: saddlebrown"><u><a href="https://github.com/LeeJU0912" target="_blank" title="My GitHub">LeeJU</a></u></b> 라네.
             </span>
         </strong>
@@ -31,11 +40,11 @@
     <br>
     <a href="https://youtu.be/rrzHAoA-oRI" target="_blank">Tobu - Back To You [NCS Release]</a>
 
-    <ol type="1" style="font-size: 40px; font-style: oblique"> How to Greeting
-        <li>Hello!</li>
+    <ol type="1" class="greet"> How to Greeting
+        <li class="new">Hello!</li>
         <li>こんにちは！</li>
         <li>你好！</li>
-        <li>안녕하세요!</li>
+        <li class="new">안녕하세요!</li>
     </ol>
 
     <p>
@@ -56,8 +65,10 @@
         </fieldset>
         <fieldset>
             <legend>배송 정보</legend>
-            <label><input type="radio" value="yes" name="gift">yes</label>
-            <label><input type="radio" value="no" name="gift">no</label>
+            <input type="radio" value="yes" name="gift">
+            <label>yes</label>
+            <input type="radio" value="no" name="gift">
+            <label>no</label>
             <label><input type="checkbox">1</label>
             <label><input type="checkbox">2</label>
             <label><input type="checkbox">3</label>
@@ -134,8 +145,11 @@
         <tr>
         </tr>
     </table>
-    <label for="memo">메모</label>
-    <textarea id="memo" cols="40" rows="4"></textarea>
+    <div class="box">
+        <label for="memo">메모</label>
+        <br>
+        <textarea id="memo" cols="40" rows="4"></textarea>
+    </div>
 </div>
 </body>
 </html>

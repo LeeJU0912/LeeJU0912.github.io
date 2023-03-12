@@ -1,0 +1,42 @@
+@font-face {
+    font-family: NanumSquareNeoTTF-bRg;
+    src: url("../font/NanumSquareNeoTTF-bRg.woff2") format("woff");
+}
+.wfont {
+    font-family: "NanumSquareNeoTTF-bRg", serif;
+}
+
+.sketch {
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+
+    text-align: center;
+
+    padding-top: 150px;
+    width: 500px;
+    height: 500px;
+    border: 3px solid black;
+    border-radius: 20px;
+    box-shadow: 0 -2px 5px 4px darkgrey;
+}
+
+.enter a:link, .enter a:visited {
+    display: inline-block;
+
+    box-sizing: border-box;
+    width: 120px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: rosybrown;
+
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    line-height: 60px;
+}
+
+.enter a:hover, .enter a:focus {
+    background-color: saddlebrown;
+}
