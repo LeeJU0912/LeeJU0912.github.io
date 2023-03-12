@@ -1,44 +1,79 @@
-.test1 {
-    border: 1px solid #000;
+@font-face {
+    font-family: NanumSquareNeoTTF-bRg;
+    src: url("../font/NanumSquareNeoTTF-bRg.woff2") format("woff");
 }
-.greet {
-    font-size: 40px;
-    text-shadow: 1px -3px 10px darkmagenta;
-}
-.hi {
-    font-size: 30px;
-    color: orange;
-}
-.box {
-    box-sizing: border-box;
-    width: 400px;
-    height: 200px;
-    border-style: dashed;
-    border-width: thick thin thick thin;
-    border-color: aqua;
-    box-shadow: 1px -2px 10px 4px darkblue;
+.wfont {
+    font-family: "NanumSquareNeoTTF-bRg", serif;
 }
 
-.rabbit {
-    max-width: 20%;
-    height: auto;
-    border-radius: 20px;
+.top_song {
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
-input[required] {
-    border-color: red;
+.youtube_logo {
+    width: auto;
+    height: 10px;
 }
 
-input:checked + label {
-    color: green;
+.song_player {
+    width: 380px;
+    height: 30px;
 }
 
-.new::after {
-    content: "NEW!!";
+.song_setting {
     font-size: small;
-    padding: 4px 8px;
-    margin: 0 10px;
-    border-radius: 4px;
-    background: #f00;
-    color: #fff;
+    text-decoration: none;
+    color: black;
+    font-style: oblique;
+}
+
+.myPic {
+    margin-top: 10px;
+    width: 170px;
+    height: 170px;
+    border-radius: 70%;
+    border: 2px solid lavenderblush;
+}
+
+.main_setting {
+    background-color: white;
+    width: 1100px;
+    height: 1000px;
+    border: 2px solid lavenderblush;
+    margin: -35px auto 0 auto;
+    border-radius: 2%;
+    box-shadow: 0 -2px 15px 10px lemonchiffon;
+}
+
+.main_name {
+    margin-top: 70px;
+    margin-left: 30px;
+    letter-spacing: 1px;
+}
+
+.main_college {
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.main_certificate {
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.main_certi_listset {
+    line-height: 25px;
+}
+
+.main_techstack {
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.footer_setting {
+}
+
+.footer_text {
+    text-align: center;
 }

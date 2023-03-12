@@ -3,153 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/main.css" type="text/css">
-    <title>LeeJU 스케치북</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
-
-        .wfont {
-            font-family: 'Gamja Flower', cursive;
-        }
-    </style>
+    <title>About ME</title>
 </head>
-<body class="wfont">
-<div id="container">
-    <p class="test1">class selector test</p>
-    <p class="test1">class selector test2</p>
-    <p>
-        <img src="./src/rabbit.jpg" alt="Rabbit" class="rabbit">
-        <br>
-        <strong>
-            <span class="hi">
-                반갑네🐰 내 이름은 <b style="color: saddlebrown"><u><a href="https://github.com/LeeJU0912" target="_blank" title="My GitHub">LeeJU</a></u></b> 라네.
-            </span>
-        </strong>
-    </p>
-    <h1 style="margin-top:120px;">
-        자주 들러주시게나☺️
-    </h1>
-    <p>
-        <a href="aboutme.html">
-            ABOUT ME
-        </a>
-    </p>
-
-    <audio controls>
-        <source src="Tobu%20-%20Back%20To%20You%20%5BNCS%20Release%5D.mp3">
+<body>
+<header style="background-color: beige">
+    <div style="margin-top: -10px"></div>
+    <div class="top_song">
+        <img src="src/youtube_social_icon_red.png" class="youtube_logo" alt="Youtube">
+        <a href="https://youtu.be/CYDP_8UTAus" target="_blank" class="song_setting">NEFFEX - Fight Back [Official Video] No.37 #CopyrightFreeMusic</a>
+    </div>
+    <audio controls loop class="song_player">
+        <source src="Fight%20Back.mp3">
     </audio>
-    <br>
-    <a href="https://youtu.be/rrzHAoA-oRI" target="_blank">Tobu - Back To You [NCS Release]</a>
+    <div style="text-align: center">
+        <a href="https://github.com/LeeJU0912" target="_blank">
+            <img src="src/myPic.jpeg" class="myPic" alt="ME">
+        </a>
+    </div>
+</header>
+<div style="background-color: beige">
+    <div class="main_setting">
+        <div class="main_name">
+            <h1>이재욱 <small>Lee Jae Uk</small></h1>
 
-    <ol type="1" class="greet"> How to Greeting
-        <li class="new">Hello!</li>
-        <li>こんにちは！</li>
-        <li>你好！</li>
-        <li class="new">안녕하세요!</li>
-    </ol>
-
-    <p>
-        <label><input type="date"></label>
-        <label><input type="datetime-local"></label>
-    </p>
-
-    <form action="" autocomplete="off">
-        <fieldset>
-            <legend>상품 선택</legend>
-            <label for="user-id">아이디(6자 이상)</label>
-            <input type="text" id="user-id" placeholder="여기에 입력하시게." autofocus required>
-
-            <label for="pwd">패스워드</label>
-            <input type="password" id="pwd">
-
-            <input type="submit" value="로그인">
-        </fieldset>
-        <fieldset>
-            <legend>배송 정보</legend>
-            <input type="radio" value="yes" name="gift">
-            <label>yes</label>
-            <input type="radio" value="no" name="gift">
-            <label>no</label>
-            <label><input type="checkbox">1</label>
-            <label><input type="checkbox">2</label>
-            <label><input type="checkbox">3</label>
-        </fieldset>
-        <div id="buttons">
-            <input type="submit" value="가입하기">
-            <input type="reset" value="지우기">
         </div>
-        <div id="another">
-            <button type="submit">가입하기</button>
-            <button type="reset">지우기</button>
+        <div class="main_college">
+            <h3>
+                📖 Education
+            </h3>
+            <ul style="list-style-type: none">
+                <li>홍익대학교 세종캠퍼스 소프트웨어융합학과 22학번 (2022.03~)</li>
+                <li><small>Hongik University, Department of Software and Communications Engineering</small></li>
+            </ul>
         </div>
-    </form>
+        <div class="main_certificate">
+            <h3>
+                ⭐️ Certificate
+            </h3>
+            <ul class="main_certi_listset">
+                <li>JLPT N1 (2022.12)</li>
+                <li>TOEIC 830 (2023.01)</li>
+                <li>HSK 3级 (2023.02)</li>
+            </ul>
+        </div>
 
-    <ul>
-        <li>
-            <label><input type="checkbox" value="s_3">선물용 3kg</label>
-            <label>
-                <input type="number" min="0" max="5">
-                개 (최대 5개)
-            </label>
-        </li>
-        <li>
-            <label><input type="checkbox" value="s_5">선물용 5kg</label>
-            <label>
-                <input type="range" min="0" max="3" value="1">
-                개
-            </label>
-        </li>
-    </ul>
-    <p>
-        10000원<small>(부과세 포함)</small>
-        H<sub>2</sub>O
-        E = mc<sup>2</sup>
-    </p>
-    <label for="rabbit"></label><select id="rabbit">
-        <option value="rab1" selected>드워프 토끼</option>
-        <option value="rab2">롭이어 토끼</option>
-    </select>
-    <table>
-        <caption>홍익대</caption>
-        <colgroup>
-            <col style="background-color: yellow">
-            <col span="2" style="width: 200px">
-        </colgroup>
-        <thead>
-        <tr>
-            <th>단과대</th>
-            <th>성비</th>
-            <th>위치</th>
-        </tr>
-        </thead>
+        <div class="main_techstack">
+            <h3>🍀 Tech Stack</h3>
+            <div style="margin-left: 30px">
+                <h4>Front-end</h4>
+                <ul>
+                    <li>
+                        WEB (HTML, CSS, Javascript)
+                    </li>
+                </ul>
 
-        <tbody>
-        <tr>
-            <td>공대</td>
-            <td>남초</td>
-            <td rowspan="2">서울</td>
-        </tr>
-        <tr>
-            <td>경영대</td>
-            <td>반반?</td>
-        </tr>
-        <tr>
-            <td>조형대</td>
-            <td>여초</td>
-            <td rowspan="2">세종</td>
-        </tr>
-        <tr>
-            <td>과기대</td>
-            <td>남초</td>
-        </tr>
-        </tbody>
-        <tr>
-        </tr>
-    </table>
-    <div class="box">
-        <label for="memo">메모</label>
-        <br>
-        <textarea id="memo" cols="40" rows="4"></textarea>
+                <h4>Back-end</h4>
+                <ul>
+                    <li>
+                        None
+                    </li>
+                </ul>
+
+                <h4>ETC</h4>
+                <ul>
+                    <li>Git/Github</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div style="height: 20px">
     </div>
 </div>
+<footer style="background-color: beige">
+    <div class="footer_setting">
+        <div class="footer_text">
+            v.2023.03.13
+        </div>
+    </div>
+</footer>
 </body>
 </html>
