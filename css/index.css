@@ -1,20 +1,16 @@
-
-
 .sketch {
     box-sizing: border-box;
+    width: 500px;
+    height: 500px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 200px;
     background-color: white;
-
     text-align: center;
-
     padding-top: 150px;
-    width: 500px;
-    height: 500px;
     border: 3px solid darkgreen;
     border-radius: 20px;
-    box-shadow: 0 -2px 5px 4px forestgreen;
+    box-shadow: 1px -2px 5px 4px forestgreen;
 }
 
 .enter a:link, .enter a:visited {
