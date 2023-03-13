@@ -87,8 +87,11 @@
 }
 
 .footer_setting {
+    text-align: center;
+    line-height: 10px;
+    height: 150px;
 }
 
 .footer_text {
-    text-align: center;
+
 }
