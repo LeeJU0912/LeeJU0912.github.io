@@ -52,6 +52,11 @@
     letter-spacing: 1px;
 }
 
+.main_saying {
+    margin-top: 70px;
+    margin-left: 30px;
+}
+
 .main_college {
     margin-top: 50px;
     margin-left: 30px;
@@ -64,11 +69,17 @@
 
 .main_certi_listset {
     line-height: 25px;
+    list-style-type: none;
 }
 
 .main_techstack {
     margin-top: 50px;
     margin-left: 30px;
+}
+
+.main_techstack h4 {
+    margin-bottom: 3px;
+    margin-top: 40px;
 }
 
 .footer_setting {
