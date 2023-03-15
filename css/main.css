@@ -6,8 +6,9 @@
     font-family: "NanumSquareNeoTTF-bRg", serif;
 }
 
-.top_song {
-    margin-top: 10px;
+.musicController {
+    height: 30px;
+    line-height: 30px;
     margin-left: 10px;
 }
 
