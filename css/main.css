@@ -16,16 +16,10 @@
     height: 10px;
 }
 
-.song_player {
-    width: 400px;
-    height: 30px;
-}
-
-.song_setting {
-    font-size: small;
-    text-decoration: none;
-    color: black;
-    font-style: oblique;
+.musicTextStyle {
+    margin-left: 10px;
+    font-style: italic;
+    font-size: 14px;
 }
 
 .myPic {
