@@ -12,7 +12,7 @@ let currentAudio = 0;
 const audioList = [
     "NEFFEX - Fight Back",
     "NEFFEX - Grateful",
-    "Tobu & Itro - Sunburst",
+    "Tobu & Itro - Sunburst [Released by NCS]",
 ];
 
 const audioLink = [
