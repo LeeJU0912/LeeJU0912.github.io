@@ -17,26 +17,38 @@
     <link rel="icon" href="src/free-icon-easter-bunny-347397.png">
 </head>
 <body>
+
 <script>
-
     //greeting.show();
-
     doing = making("HI");
     doing();
-
-    
 </script>
+
+<audio id="audioContainer">
+    <source id="audioSource" src="">
+</audio>
+
 <header style="background-color: beige">
     <div style="margin-top: -10px"></div>
     <div class="top_song">
-        <a href="https://youtu.be/1-0-4HqyvXE" target="_blank" class="song_setting">
-            <img src="src/youtube_social_icon_red.png" class="youtube_logo" alt="Youtube">
-            Tobu & Itro - Sunburst [Released by NCS] #NoCopyrightMusic
-        </a>
+        <div class="js-onOffWrap">
+            <button id="play" class="js-playBtn">▶️</button>
+            <button class="js-stopBtn">⏹</button>
+            <button class="js-nextBtn">⏭️</button>
+        </div>
+        <script src="js/musicPlayer.js"></script>
+
+        <script>
+            document.getElementById("play").click();
+        </script>
+<!--        <a href="https://youtu.be/1-0-4HqyvXE" target="_blank" class="song_setting">-->
+<!--            <img src="src/youtube_social_icon_red.png" class="youtube_logo" alt="Youtube">-->
+<!--            Tobu & Itro - Sunburst [Released by NCS] #NoCopyrightMusic-->
+<!--        </a>-->
     </div>
-    <audio controls autoplay loop class="song_player">
-        <source src="src/Tobu%20&%20Itro%20-%20Sunburst.mp3">
-    </audio>
+<!--    <audio controls loop class="song_player">-->
+<!--        <source src="audio/Tobu%20&%20Itro%20-%20Sunburst.mp3">-->
+<!--    </audio>-->
     <div style="text-align: center">
         <a href="https://github.com/LeeJU0912" target="_blank">
             <img src="src/myPic.jpeg" class="myPic" alt="ME">
