@@ -19,11 +19,11 @@ function playAudio() {
     audioContainer.loop = true;
     const playAudio = audioContainer.play();
 
-    showMusicText.innerHTML = audioList[currentAudio] + " #NoCopyrightMusic";
+
 
     if (playAudio !== undefined) {
         playAudio.then((_) => {
-
+            showMusicText.innerHTML = audioList[currentAudio] + " #NoCopyrightMusic";
         }).catch((error) => {
         });
     }
