@@ -30,6 +30,7 @@ function playAudio() {
 }
 
 function stopAudio() {
+    showMusicText.innerHTML = "";
     audioContainer.pause();
 }
 
