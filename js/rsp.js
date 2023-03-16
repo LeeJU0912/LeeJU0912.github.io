@@ -61,17 +61,17 @@ function paper() {
 }
 
 function DRAW() {
-    fightResult.innerHTML = "비겼습니다!";
+    fightResult.innerHTML = "<span style='color: green'>비겼습니다</span>";
 }
 
 function WIN() {
-    fightResult.innerHTML = "이겼습니다!";
+    fightResult.innerHTML = "<span style='color: blue'>이겼습니다!</span>";
     userCount++;
     userScore.innerHTML = userCount;
 }
 
 function LOSE() {
-    fightResult.innerHTML = "졌습니다!";
+    fightResult.innerHTML = "<span style='color: red'>졌습니다ㅠ</span>";
     cpuCount++;
     cpuScore.innerHTML = cpuCount;
 }
