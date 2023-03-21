@@ -6,19 +6,21 @@ const nextBtn = document.querySelector('.js-nextBtn');
 const showMusicText = document.getElementById("musicText");
 const musicLink = document.getElementById("musicLink");
 
-const MUSIC_COUNT = 3;
+const MUSIC_COUNT = 4;
 let currentAudio = 0;
 
 const audioList = [
-    "NEFFEX - Fight Back",
+    "Egzod - Rise Up (ft. Veronica Bravo & M.I.M.E) [Released by NCS].mp3",
     "NEFFEX - Grateful",
     "Tobu & Itro - Sunburst [Released by NCS]",
+    "NEFFEX - Fight Back"
 ];
 
 const audioLink = [
-    "https://youtu.be/CYDP_8UTAus",
+    "https://youtu.be/aifDMH1p3zw",
     "https://youtu.be/83RUhxsfLWs",
     "https://youtu.be/1-0-4HqyvXE",
+    "https://youtu.be/CYDP_8UTAus"
 ]
 
 function playAudio() {
