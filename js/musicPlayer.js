@@ -10,7 +10,7 @@ const MUSIC_COUNT = 4;
 let currentAudio = 0;
 
 const audioList = [
-    "Egzod - Rise Up (ft. Veronica Bravo & M.I.M.E) [Released by NCS].mp3",
+    "Egzod - Rise Up (ft. Veronica Bravo & M.I.M.E) [Released by NCS]",
     "NEFFEX - Grateful",
     "Tobu & Itro - Sunburst [Released by NCS]",
     "NEFFEX - Fight Back"
