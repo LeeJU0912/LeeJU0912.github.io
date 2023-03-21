@@ -3,8 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>가위바위보 test</title>
+
+    <!-- Remember to include jQuery :) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 </head>
 <body>
+
 <div>
     <span>USER</span>
     <span> vs </span>
@@ -30,6 +38,7 @@
 <div>
     <span id="fightResult">누가 이길까?</span>
 </div>
+<a href="#" rel="modal:close"><button>닫기</button></a>    <!-- 닫기버튼 -->
 </body>
 <script src="../js/rsp.js"></script>
 </html>

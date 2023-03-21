@@ -14,14 +14,23 @@
     </style>
     <title>About ME</title>
     <link rel="icon" href="src/free-icon-easter-bunny-347397.png">
+    <!-- Remember to include jQuery :) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 </head>
 <body>
 
+<!-- 현재 재생되는 음악 txt -->
 <audio id="audioContainer">
     <source id="audioSource" src="">
 </audio>
 
 <header style="background-color: beige">
+
+    <!-- 음악 컨트롤러 -->
     <div class="top_song">
         <div class="musicController">
             <button id="play" class="js-playBtn">▶️</button>
@@ -40,12 +49,26 @@
         </script>
     </div>
 
+    <!-- href 속성값을 사용하여 modal을 띄워주는 링크 -->
     <div>
-        <a href="html/rsp.html">
-            <button class="js-rsp">가위바위보</button>
-        </a>
+        <p><a href="./html/rsp.html" rel="modal:open"><button>가위바위보</button></a></p>
     </div>
 
+<!--    <script>-->
+<!--    // Open modal in AJAX callback-->
+<!--        $('#modal-popup').click(function(event) {-->
+<!--            event.preventDefault();-->
+<!--            this.blur(); // Manually remove focus from clicked link.-->
+<!--            $.get(this.href, function(html) {-->
+<!--                $(html).appendTo('body').modal();-->
+<!--            });-->
+<!--            $(this).modal({-->
+<!--                fadeDuration: 1000-->
+<!--            });-->
+<!--        });-->
+<!--    </script>-->
+
+    <!-- 프로필 사진 -->
     <div style="text-align: center">
         <a href="https://github.com/LeeJU0912" target="_blank">
             <img src="src/myPic.jpeg" class="myPic" alt="ME">
@@ -54,6 +77,8 @@
 </header>
 <div style="background-color: beige">
     <div class="main_setting">
+
+        <!-- About ME -->
         <div class="gowun_dodum main_name">
             <h1>이재욱 <small>Lee Jae Uk</small></h1>
         </div>
@@ -70,6 +95,8 @@
                 <li><small>Hongik University, Department of Software and Communications Engineering</small></li>
             </ul>
         </div>
+
+        <!-- 나의 자격증 -->
         <div class="main_certificate">
             <h3>
                 ⭐️ Certificate
@@ -81,6 +108,7 @@
             </ul>
         </div>
 
+        <!-- 나의 기술 스택 -->
         <div class="main_techstack">
             <h3>🍀 Tech Stack</h3>
             <div class="main_techlist">
