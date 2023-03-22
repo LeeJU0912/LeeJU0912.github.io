@@ -88,7 +88,11 @@
     <script>
         $(function() {
             $('a[data-modal]').on('click', function() {
+
                 $($(this).data('modal')).modal();
+                $(this).modal({
+                    fadeDuration: 300
+                });
                 return false;
             });
         });
