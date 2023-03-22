@@ -51,8 +51,47 @@
 
     <!-- href 속성값을 사용하여 modal을 띄워주는 링크 -->
     <div>
-        <p><a href="./html/rsp.html" rel="modal:open"><button>가위바위보</button></a></p>
+        <p><a href="./html/rsp.html" data-modal="#rsp-modal"><button>가위바위보</button></a></p>
     </div>
+
+    <div id="rsp-modal" class="modal">
+        <div>
+            <span>USER</span>
+            <span> vs </span>
+            <span>CPU</span>
+        </div>
+        <div>
+            <button class="rock">바위</button>
+            <button class="scissors">가위</button>
+            <button class="paper">보</button>
+        </div>
+        <div>
+            <p id="fightScore"></p>
+            <span id="userScore">0</span>
+            <span>승 </span>
+            <span id="cpuScore">0</span>
+            <span>패 </span>
+        </div>
+        <div>
+            <span>CPU가 낸 결과 : </span>
+            <span id="cpu-result">위에 버튼을 눌러봐</span>
+        </div>
+
+        <div>
+            <span id="fightResult">누가 이길까?</span>
+        </div>
+        <a href="#" rel="modal:close"><button>닫기</button></a>    <!-- 닫기버튼 -->
+        <script src="./js/rsp.js"></script>
+    </div>
+
+    <script>
+        $(function() {
+            $('a[data-modal]').on('click', function() {
+                $($(this).data('modal')).modal();
+                return false;
+            });
+        });
+    </script>
 
 <!--    <script>-->
 <!--    // Open modal in AJAX callback-->
