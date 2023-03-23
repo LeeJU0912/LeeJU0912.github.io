@@ -88,9 +88,7 @@
     <script>
         $(function() {
             $('a[data-modal]').on('click', function() {
-
-                $($(this).data('modal')).modal();
-                $(this).modal({
+                $($(this).data('modal')).modal({
                     fadeDuration: 300
                 });
                 return false;
