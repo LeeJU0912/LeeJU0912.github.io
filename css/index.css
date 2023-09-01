@@ -1,33 +1,92 @@
-.sketch {
-    box-sizing: border-box;
-    width: 500px;
-    height: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 200px;
+@font-face {
+    font-family: NanumSquareNeoTTF-bRg;
+    src: url("../font/NanumSquareNeoTTF-bRg.woff2") format("woff");
+}
+.wfont {
+    font-family: "NanumSquareNeoTTF-bRg", serif;
+}
+
+.musicController {
+    height: 50px;
+    line-height: 50px;
+    margin-left: 10px;
+}
+
+.youtube_logo {
+    margin-left: 5px;
+    width: auto;
+    height: 10px;
+}
+
+.musicTextStyle {
+    font-style: italic;
+    font-size: 14px;
+}
+
+.myPic {
+    margin-top: 10px;
+    width: 170px;
+    height: 170px;
+    border-radius: 70%;
+    border: 2px solid lavenderblush;
+}
+
+.main_setting {
     background-color: white;
+    width: 1100px;
+    height: 1100px;
+    border: 2px solid lavenderblush;
+    margin: -35px auto 0 auto;
+    border-radius: 2%;
+    box-shadow: 0 -2px 15px 10px lemonchiffon;
+}
+
+.main_name {
+    margin-top: 70px;
+    margin-left: 30px;
+    letter-spacing: 1px;
+}
+
+.main_college {
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.main_certificate {
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.main_activity {
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.main_certi_listset {
+    line-height: 25px;
+    list-style-type: none;
+}
+
+.main_techstack {
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.main_techstack h4 {
+    margin-bottom: 3px;
+    margin-top: 40px;
+}
+
+.main_techlist {
+    margin-left: 30px;
+}
+
+.footer_setting {
     text-align: center;
-    padding-top: 150px;
-    border: 3px solid darkgreen;
-    border-radius: 20px;
-    box-shadow: 1px -2px 5px 4px forestgreen;
+    line-height: 10px;
+    height: 150px;
 }
 
-.enter a:link, .enter a:visited {
-    display: inline-block;
+.footer_text {
 
-    box-sizing: border-box;
-    width: 120px;
-    height: 60px;
-    border-radius: 10px;
-    background-color: seagreen;
-
-    text-decoration: none;
-    color: white;
-    font-size: 30px;
-    line-height: 60px;
-}
-
-.enter a:hover, .enter a:focus {
-    background-color: limegreen;
 }
