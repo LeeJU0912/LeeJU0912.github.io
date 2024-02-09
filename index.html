@@ -4,26 +4,192 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/index.css" type="text/css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
-
-        .wfont {
-            font-family: 'Gamja Flower', cursive;
+        @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Kanit:wght@500&display=swap');
+        .gowun_dodum {
+            font-family: 'Gowun Dodum', sans-serif;
         }
     </style>
-    <title>LeeJU 스케치북</title>
+    <title>About ME</title>
+    <link rel="icon" href="src/free-icon-easter-bunny-347397.png">
+    <!-- Remember to include jQuery :) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 </head>
-<body class="wfont" style="background-color: yellowgreen">
-<div class="sketch">
-    <h1 style="font-size: 50px; letter-spacing: 3px">
-        About ME
-    </h1>
-    <div style="text-align: center">
-        <p class="enter">
-            <a href="main.html">
-                입장
+<body>
+
+<!-- 현재 재생되는 음악 txt -->
+<audio id="audioContainer">
+    <source id="audioSource" src="">
+</audio>
+
+<header style="background-color: beige">
+
+    <!-- 음악 컨트롤러 -->
+    <div class="top_song">
+        <div class="musicController">
+            <button id="play" class="js-playBtn">▶️</button>
+            <button class="js-stopBtn">⏹</button>
+            <button class="js-prevBtn">⏮️</button>
+            <button class="js-nextBtn">⏭️</button>
+            <a target="_blank" id="musicLink" style="text-decoration: none; color: black">
+                <img src="src/youtube_social_icon_red.png" class="youtube_logo" alt="Youtube">
+                <span id="musicText" class="musicTextStyle">Click Play Button</span>
             </a>
-        </p>
+        </div>
+        <script src="js/musicPlayer.js"></script>
+
+        <script>
+            document.getElementById("play").click();
+        </script>
+    </div>
+
+    <!-- href 속성값을 사용하여 modal을 띄워주는 링크 -->
+    <div>
+        <p><a href="./html/rsp.html" data-modal="#rsp-modal"><button>가위바위보</button></a></p>
+    </div>
+
+    <!-- 가위바위보 코드 -->
+    <div id="rsp-modal" class="modal">
+        <div>
+            <span>USER</span>
+            <span> vs </span>
+            <span>CPU</span>
+        </div>
+        <div>
+            <button class="rock">바위</button>
+            <button class="scissors">가위</button>
+            <button class="paper">보</button>
+        </div>
+        <div>
+            <p id="fightScore"></p>
+            <span id="userScore">0</span>
+            <span>승 </span>
+            <span id="cpuScore">0</span>
+            <span>패 </span>
+        </div>
+        <div>
+            <span>CPU가 낸 결과 : </span>
+            <span id="cpu-result">위에 버튼을 눌러봐</span>
+        </div>
+
+        <div>
+            <span id="fightResult">누가 이길까?</span>
+        </div>
+        <script src="./js/rsp.js"></script>
+    </div>
+
+    <!-- 가위바위보 Modal script -->
+    <script>
+        $(function() {
+            $('a[data-modal]').on('click', function() {
+                $($(this).data('modal')).modal({
+                    fadeDuration: 300
+                });
+                return false;
+            });
+        });
+    </script>
+
+    <!--    <script>-->
+    <!--    // Open modal in AJAX callback-->
+    <!--        $('#modal-popup').click(function(event) {-->
+    <!--            event.preventDefault();-->
+    <!--            this.blur(); // Manually remove focus from clicked link.-->
+    <!--            $.get(this.href, function(html) {-->
+    <!--                $(html).appendTo('body').modal();-->
+    <!--            });-->
+    <!--            $(this).modal({-->
+    <!--                fadeDuration: 1000-->
+    <!--            });-->
+    <!--        });-->
+    <!--    </script>-->
+
+    <!-- 프로필 사진 -->
+    <div style="text-align: center">
+        <a href="https://github.com/LeeJU0912" target="_blank">
+            <img src="src/myPic.jpeg" class="myPic" alt="ME">
+        </a>
+    </div>
+</header>
+<div style="background-color: beige">
+    <div class="main_setting">
+
+        <!-- About ME -->
+        <div class="gowun_dodum main_name">
+            <h1>이재욱 <small>Lee Jae Uk</small></h1>
+        </div>
+        <div class="main_college">
+            <h3>
+                📖 Education
+            </h3>
+            <ul style="list-style-type: none">
+                <li>홍익대학교 세종캠퍼스 소프트웨어융합학과 (2022.03~)</li>
+                <li><small>Hongik University, Department of Software and Communications Engineering</small></li>
+            </ul>
+        </div>
+
+        <!-- 나의 자격증 -->
+        <div class="main_certificate">
+            <h3>
+                ⭐️ Certificate
+            </h3>
+            <ul class="main_certi_listset">
+                <li>🇯🇵 JLPT N1 (2022.12)</li>
+                <li>🇺🇸 TOEIC 830 (2023.01)</li>
+            </ul>
+        </div>
+
+        <!-- 나의 대외 활동 -->
+        <div class="main_activity">
+            <h3>
+                🌈 Activity
+            </h3>
+            <ul class="main_certi_listset">
+                <li>Samsung SDS Algorithm Camp (2023.07.24 ~ 2023.08.04)</li>
+            </ul>
+        </div>
+
+        <!-- 나의 기술 스택 -->
+        <div class="main_techstack">
+            <h3>🍀 Tech Stack</h3>
+            <div class="main_techlist">
+                <h4>Front-end</h4>
+                <ul>
+                    <li>
+                        WEB (HTML, CSS, Javascript)
+                    </li>
+                </ul>
+
+                <h4>Back-end</h4>
+                <ul>
+                    <li>
+                        JAVA Spring
+                    </li>
+                </ul>
+
+                <h4>ETC</h4>
+                <ul>
+                    <li>Git/Github</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div style="height: 20px">
     </div>
 </div>
+<footer style="background-color: beige">
+    <div class="footer_setting">
+        <div class="footer_text">
+            v.2023.08.07
+        </div>
+        <div>
+            <h4>Credit</h4>
+            <span><a href="https://www.flaticon.com/kr/free-icons/" title="토끼 아이콘" style="font-size: 12px">토끼 Fabicon 제작자: Freepik - Flaticon</a></span>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
